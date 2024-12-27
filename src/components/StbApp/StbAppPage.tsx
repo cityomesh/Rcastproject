@@ -1,13 +1,10 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const StbAppPage = () => {
-
-  const [activeIndex, setActiveIndex] = useState(0);
-
   const images = [
     { src: "/vcdhg.png", alt: "Smart TV" },
     { src: "/mnvh.png", alt: "Smart TV" },
@@ -15,7 +12,6 @@ const StbAppPage = () => {
 
   return (
     <div className="bg-white">
-
       <div className="bg-white mt-6 p-6">
         <h2 className="text-center font-semibold text-3xl font-poppins text-blue-800 mt-[5rem]">Set-Top-Box</h2>
       </div>
@@ -31,7 +27,7 @@ const StbAppPage = () => {
           />
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4">
-          <Carousel showThumbs={true} autoPlay infiniteLoop onChange={setActiveIndex}>
+          <Carousel showThumbs={true} autoPlay infiniteLoop>
             {images.map((image, index) => (
               <div key={index} className="items-center">
                 <Image
@@ -57,7 +53,7 @@ const StbAppPage = () => {
 
         <div className="bg-[#0a0f2c] text-white p-8 rounded-lg shadow-md w-full max-w-[85rem] mb-5 hover:bg-yellow-400 hover:text-black">
           <h2 className="text-xl font-bold mb-2">We have ULKA Lite App available on Google TV / Android TV play stores but it can be used only in
-            our partner's network. 
+            our partner&apos;s network. 
             <p>Alternately, the same app can be downloaded from our Website for
             manual installation in AOSP STB or AOSP Smart TV. Android Version 7.1 to 13 are supported</p></h2>
         </div>

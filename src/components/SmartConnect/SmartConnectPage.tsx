@@ -4,18 +4,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const SmartConnectPage = () => {
 
-
-  const [animate, setAnimate] = useState<boolean>(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setAnimate(false);
-      setTimeout(() => setAnimate(true), 200);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   const services = [
     {
       src: "dgfvcz.png",

@@ -4,10 +4,6 @@ import Image from "next/image";
 import { motion } from 'framer-motion';
 
 const TechnologyPage = () => {
-
-
-  const [animate, setAnimate] = useState<boolean>(true);
-
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

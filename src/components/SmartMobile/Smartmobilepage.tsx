@@ -2,18 +2,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-interface Item {
-  label: string;
-  image: string;
-  alt: string;
-}
-
 const Smartmobilepage = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [selectedItem, setSelectedItem] = React.useState<string | null>(null);
 
   const images = [
     { src: "/iphonexs.webp", alt: "Smart TV" },
@@ -23,20 +14,6 @@ const Smartmobilepage = () => {
     { src: "/ytye.png", alt: "Resa" },
   ];
   
-  const services = [
-    {
-      description: "All Smart TVs, Smart STBs, Smart Sticks can be connected to Home Wi-Fi Network without Fiber, Coaxial or Lan Cables.",
-    },
-    {
-      description: "All types of Last Mile Distribution Networks are supported, including GPON, EPON, 1G/10G LAN, Air Fiber, Point-to-Point, and Point-to-Multipoint Wireless Links.",
-    },
-    {
-      description: "Rcast CDN Servers are available in various configurations to suit Small and Large Networks, supporting 8000 to 100,000 concurrent users.",
-    },
-    {
-      description: "Rcast Smart TV App for connected Smart Televisions ULKA Lite App is available in Android TV, Google TV, Fire TV, Fire Stick, Samsung TV App Stores, and LG TV is under Process.",
-    },
-  ];
   return (
     <div className="bg-gradient-to-r from-blue-200 to-yellow-200 min-h-screen w-full flex flex-col">
       <div className="mt-6 p-6">
@@ -105,14 +82,6 @@ const Smartmobilepage = () => {
           />
         </div>
         <div className="w-full max-w-[330px]">
-          {/* <Image
-            src="/imagetest.png"
-            alt="Large Facility Image"
-            width={1500}
-            height={600}
-            objectFit="cover"
-            priority
-          /> */}
           <Image
             src="/ulkaphone.png"
             alt="Large Facility Image"
