@@ -15,7 +15,7 @@ const Smartmobilepage = () => {
       <div className="flex flex-col md:flex-row justify-center items-center gap-4">
         <div className="w-full max-w-[830px]">
           <Image
-            src="/hindhiuka.png"
+            src="/smarttvadd.png"
             alt="Large Facility Image"
             width={1500}
             height={600}
@@ -61,12 +61,12 @@ const Smartmobilepage = () => {
       </div>
 
       <div className="flex justify-center gap-6 items-center mt-[3rem] px-4">
-        <div className="w-full max-w-[340px]">
+        <div className="w-full max-w-[370px]">
           <Image
-            src="/ulkalitetvd.png"
+            src="/yhfgh.png"
             alt="Large Facility Image"
             width={1500}
-            height={600}
+            height={700}
             objectFit="cover"
             priority
           />
@@ -83,7 +83,7 @@ const Smartmobilepage = () => {
         </div>
         <div className="w-full max-w-[330px]">
           <Image
-            src="/ulkaminis.png"
+            src="/wuyger.png"
             alt="Large Facility Image"
             width={1500}
             height={600}

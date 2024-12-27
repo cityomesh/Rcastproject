@@ -339,31 +339,32 @@ const Homepage = () => {
                 </>
               )}
             </div>
+            <div className="flex flex-col items-center justify-center">
+              <h2 className="bg-gradient-to-r from-black to-indigo-300 text-white text-[16px] md:text-[20px] xl:text-[30.556px] text-center font-semibold cursor-default mt-4 py-2 px-4 rounded-xl shadow-md">
+                Bouquets and Channels
+              </h2>
 
-            <h2 className="text-gray-800 text-[16px] md:text-[20px] xl:text-[30.556px] text-center font-semibold cursor-default mt-4">
-              Bouquets and Channels
-            </h2>
-
-            <div className="container mx-auto max-w-8xl lg:w-full xl:w-full p-4 rounded-[20px] my-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[7rem]">
-                {servicesproject.map((service, index) => (
-                  <div
-                    key={index}
-                    className={`flex flex-col items-start justify-between h-auto w-full sm:w-[18rem] rounded-[20px] text-[#032963] text-left p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:text-white ${
-                      index === 0
-                        ? "hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300"
-                        : index === 1
-                        ? "hover:bg-gradient-to-r hover:from-red-500 hover:to-red-300"
-                        : index === 2
-                        ? "hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-300"
-                        : "hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-300"
-                    }`}
-                  >
-                    <p className="tracking-wider text-sm md:text-lg font-bold leading-relaxed transition-colors duration-300 hover:text-white">
-                      {service.description}
-                    </p>
-                  </div>
-                ))}
+              <div className="px-4 mt-8 mx-auto max-w-8xl lg:w-full xl:w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-4 justify-center">
+                  {servicesproject.map((service, index) => (
+                    <div
+                      key={index}
+                      className={`flex flex-col items-center justify-between h-auto w-full sm:w-[18rem] rounded-[20px] text-[#032963] text-left p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:text-white ${
+                        index === 0
+                          ? "hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300"
+                          : index === 1
+                          ? "hover:bg-gradient-to-r hover:from-red-500 hover:to-red-300"
+                          : index === 2
+                          ? "hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-300"
+                          : "hover:bg-gradient-to-r hover:from-gray-300 hover:to-pink-500"
+                      }`}
+                    >
+                      <p className="tracking-wider text-sm md:text-lg font-bold leading-relaxed transition-colors duration-300 hover:text-white">
+                        {service.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>       

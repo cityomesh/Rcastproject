@@ -12,7 +12,7 @@ const SmartTvPage: React.FC = () => {
     { src: "/mcnbvb.png", alt: "Smart TV" },
     { src: "/ytye.png", alt: "Smart TV" },
     { src: "/iuysa.png", alt: "Smart TV" },
-    { src: "/channeltv.png", alt: "Smart TV" },
+    { src: "/devsg.png", alt: "Smart TV" },
     { src: "/firetvstick.png", alt: "Smart TV" },
   ];
 
@@ -65,7 +65,7 @@ const SmartTvPage: React.FC = () => {
     { name: 'Fire TV', src: ["/tre.png"] },
     { name: 'Fire Stick & Android Stick', src: ["/stickfire.png"] },
     { name: 'Samsung TV', src: ["/tvsvmsung.png"] },
-    { name: 'Set-Top-Box', src: ["/channeltv.png"] },
+    { name: 'Set-Top-Box', src: ["/tvvs.png"] },
   ];
   
 

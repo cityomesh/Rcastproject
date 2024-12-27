@@ -95,7 +95,7 @@ const SmartConnectPage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           <div className="border overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
             <img
-              src="./ulka.png"
+              src="./devsg.png"
               alt="Project 1"
               className="w-full h-[12rem] object-cover"
             />
