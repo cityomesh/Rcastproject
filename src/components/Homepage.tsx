@@ -44,11 +44,11 @@ const Homepage = () => {
                     <Link href="/smartmobile">Smart Mobile</Link>
                   </li>
                   <li className="px-8 py-4 text-2xl font-bold text-white bg-[#0a0f2c] rounded-xl hover:bg-red-500 w-58 flex-shrink-0">
-                    <Link href="/stb">STB/Stick</Link>
+                    <Link href="/stb">STB</Link>
                   </li>
-                  {/* <li className="px-8 py-4 text-2xl font-bold text-white bg-[#0a0f2c] rounded-xl hover:bg-red-500 w-58 flex-shrink-0">
+                  <li className="px-8 py-4 text-2xl font-bold text-white bg-[#0a0f2c] rounded-xl hover:bg-red-500 w-58 flex-shrink-0">
                     <Link href="/stb">Stick</Link>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
             </div>

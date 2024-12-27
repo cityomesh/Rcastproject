@@ -8,9 +8,9 @@ const IptvCableTvPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const images = [
-    { src: "/ggg.jpg", alt: "Image 1" },
-    { src: "/sateliteone.png", alt: "Image 3" },
+    { src: "/iptvvscablestvs.png", alt: "Smart TV" },
     { src: "/ol.webp", alt: "Image 2" },
+    { src: "/iptvcable.png", alt: "Image 3" },
   ];
 
   const texts = [
@@ -62,7 +62,7 @@ const IptvCableTvPage = () => {
                   src={image.src}
                   alt={image.alt}
                   width={500}
-                  height={500}
+                  height={700}
                   className="rounded-lg"
                 />
               </div>
