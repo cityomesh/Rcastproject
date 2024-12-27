@@ -1,19 +1,9 @@
 "use client";
-import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Smartmobilepage = () => {
-
-  const images = [
-    { src: "/iphonexs.webp", alt: "Smart TV" },
-    { src: "/mcnbvb.png", alt: "Smart TV" },
-    { src: "/bvhds.png", alt: "Smart TV" },
-    { src: "/resa.png", alt: "Resa" },
-    { src: "/ytye.png", alt: "Resa" },
-  ];
-  
   return (
     <div className="bg-gradient-to-r from-blue-200 to-yellow-200 min-h-screen w-full flex flex-col">
       <div className="mt-6 p-6">
@@ -23,27 +13,27 @@ const Smartmobilepage = () => {
       </div>
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-          <div className="w-full max-w-[830px]">
-            <Image
-              src="/hindhiuka.png"
-              alt="Large Facility Image"
-              width={1500}
-              height={600}
-              objectFit="cover"
-              priority
-            />
-          </div>
-          <div className="w-full max-w-[260px]">
-            <Image
-              src="/listchannel.png"
-              alt="Large Facility Image"
-              width={1500}
-              height={300}
-              objectFit="cover"
-              priority
-            />
-          </div>
+        <div className="w-full max-w-[830px]">
+          <Image
+            src="/hindhiuka.png"
+            alt="Large Facility Image"
+            width={1500}
+            height={600}
+            objectFit="cover"
+            priority
+          />
         </div>
+        <div className="w-full max-w-[260px]">
+          <Image
+            src="/listchannel.png"
+            alt="Large Facility Image"
+            width={1500}
+            height={300}
+            objectFit="cover"
+            priority
+          />
+        </div>
+      </div>
 
       <div className="flex flex-wrap justify-center gap-5 mt-8 px-4">
         {[
@@ -135,14 +125,12 @@ const Smartmobilepage = () => {
           </motion.div>
         ))}
       </div>
-        
 
       <div className="flex justify-center items-center">
         <h1 className="text-3xl font-bold text-center text-blue-900 mb-8 mt-8 bg-red-400 text-white p-5 rounded-lg shadow-md w-full max-w-[85rem] hover:bg-blue-400 hover:text-black">
           Rcast Mini Mobile App is available in Android Smart Phones and I-Phone is under Process.
         </h1>
       </div>
-
     </div>
   );
 };

@@ -1,5 +1,4 @@
 "use client";
-import React, { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const SmartConnectPage = () => {
