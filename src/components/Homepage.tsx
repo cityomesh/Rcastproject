@@ -36,7 +36,7 @@ const Homepage = () => {
 
             <div className="flex justify-center space-x-5 flex-wrap">              
               <div className="px-8 flex items-center justify-between gap-8">
-                <ul className="list-none p-0 m-0 flex flex-wrap gap-5">
+                <ul className="list-none p-0 m-0 flex flex-wrap gap-5 w-full justify-center">
                   <li className="px-8 py-4 text-2xl font-bold text-white bg-[#0a0f2c] rounded-xl hover:bg-red-500 w-58 flex-shrink-0">
                     <Link href="/smarttv">Smart TV</Link>
                   </li>
@@ -47,11 +47,12 @@ const Homepage = () => {
                     <Link href="/stb">STB</Link>
                   </li>
                   <li className="px-8 py-4 text-2xl font-bold text-white bg-[#0a0f2c] rounded-xl hover:bg-red-500 w-58 flex-shrink-0">
-                    <Link href="/stb">Stick</Link>
+                    <Link href="/stick">Stick</Link>
                   </li>
                 </ul>
               </div>
             </div>
+
             <p className="text-3xl text-red-600">
               No more <span className="font-bold text-red-500">CABLE</span> worries.<br />
               GO Wireless. Use 

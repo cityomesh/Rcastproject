@@ -27,7 +27,7 @@ const Home = () => {
     <div className="bg-white">
       <header
         className={`fixed top-0 left-0 w-full z-10 shadow-md transition-all duration-500 ease-in-out ${
-          isScrolled ? "bg-white py-3" : "bg-white py-5"
+          isScrolled ? "bg-white py-3" : "bg-white py-3"
         }`}
       >
         <div className="container mx-auto flex items-center justify-between">
@@ -41,7 +41,7 @@ const Home = () => {
             />
           </div>
 
-          <div className="md:hidden" onClick={toggleMobileMenu}>
+          <div className="md:hidden px-4" onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? (
               <FaTimes className="text-3xl cursor-pointer" />
             ) : (
@@ -75,9 +75,6 @@ const Home = () => {
             <li className="cursor-pointer hover:text-[#F7961E] py-2 px-4 md:py-0 md:px-0">
               <Link href="/about">About</Link>
             </li>
-            {/* <li className="cursor-pointer hover:text-[#F7961E] py-2 px-4 md:py-0 md:px-0">
-              <Link href="/partners">Partners</Link>
-            </li> */}
             <li className="cursor-pointer hover:text-[#F7961E] py-2 px-4 md:py-0 md:px-0">
               <Link href="/contact">Contact Us</Link>
             </li>

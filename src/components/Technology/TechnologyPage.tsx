@@ -95,6 +95,34 @@ const TechnologyPage = () => {
         </div>
       </section>
 
+
+      <div className="text-center ">
+        <h2 className="font-semibold text-2xl font-poppins text-blue-800 mt-[3rem]">DRM Application Server</h2>
+      </div>
+      <div className="flex flex-col items-center mt-10 space-y-4 mb-8 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full sm:max-w-6xl mx-auto">
+          {[
+            "City Media is a technical partner of Pallycon Multi-DRM encryption service Provider and developed the DRM Application Server to meet the TRAI regulatory specifications. The DRM Server is integrated with Multi-DRM Key server with Site ID, Site Key and Access Key.",
+            "DRM do not have any facility to activate and deactivate a Subscriber directly from the Graphical User Interface (GUI) terminal of DRM. All activation, de-activations, bouquets and channel assignments are done only in SMS and the data is pushed to DRM server.",
+            "The system is built on robust Linux operating system. The application and database servers can be independently hosted for scalability. Realtime scalable options like Openstack and Kubernetes can be deployed for unlimited expansion.",
+          ].map((text, index) => (
+            <div
+              key={index}
+              className="p-4 bg-[#0a0f2c] rounded shadow w-full transition duration-300 hover:bg-white group"
+              style={{
+                maxWidth: "400px",
+              }}
+            >
+              <h2 className="text-xl sm:text-xl font-bold leading-6 sm:leading-7 text-white text-center group-hover:text-blue-500">
+                <span className="block text-[20px] text-[#33CCC5] mt-2 group-hover:text-black">
+                  {text}
+                </span>
+              </h2>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="p-2">
         <h2 className="text-center font-semibold text-2xl font-poppins text-blue-800 mt-[4rem]">Subscriber Management System</h2>
       </div>
@@ -180,32 +208,6 @@ const TechnologyPage = () => {
         </div>
       </div>
 
-      <div className="text-center ">
-        <h2 className="font-semibold text-2xl font-poppins text-blue-800 mt-[5rem]">DRM Application Server</h2>
-      </div>
-      <div className="flex flex-col items-center mt-10 space-y-4 mb-8 px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full sm:max-w-6xl mx-auto">
-          {[
-            "City Media is a technical partner of Pallycon Multi-DRM encryption service Provider and developed the DRM Application Server to meet the TRAI regulatory specifications. The DRM Server is integrated with Multi-DRM Key server with Site ID, Site Key and Access Key.",
-            "DRM do not have any facility to activate and deactivate a Subscriber directly from the Graphical User Interface (GUI) terminal of DRM. All activation, de-activations, bouquets and channel assignments are done only in SMS and the data is pushed to DRM server.",
-            "The system is built on robust Linux operating system. The application and database servers can be independently hosted for scalability. Realtime scalable options like Openstack and Kubernetes can be deployed for unlimited expansion.",
-          ].map((text, index) => (
-            <div
-              key={index}
-              className="p-4 bg-[#0a0f2c] rounded shadow w-full transition duration-300 hover:bg-white group"
-              style={{
-                maxWidth: "400px",
-              }}
-            >
-              <h2 className="text-xl sm:text-xl font-bold leading-6 sm:leading-7 text-white text-center group-hover:text-blue-500">
-                <span className="block text-[20px] text-[#33CCC5] mt-2 group-hover:text-black">
-                  {text}
-                </span>
-              </h2>
-            </div>
-          ))}
-        </div>
-      </div>
 
       <div className="text-center">
         <h2 className="font-semibold text-2xl font-poppins text-blue-800 mt-[3rem] mb-8">Transcoding and Encryption Servers</h2>

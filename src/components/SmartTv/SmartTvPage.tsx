@@ -67,76 +67,70 @@ const SmartTvPage: React.FC = () => {
     { name: 'Samsung TV', src: ["/tvsvmsung.png"] },
     { name: 'Set-Top-Box', src: ["/tvvs.png"] },
   ];
-  
 
   const contentSections = [
     { src: "/swtr.png", alt: "SMART TV" },
     { src: "/oldtv.png", alt: "SMART TV" },
     { src: "/obn.png", alt: "Smart TV" },
-
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-100 to-yellow-100 flex flex-col items-center justify-center px-4 py-2">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 mt-[8rem]">
-        <div>
-          <Carousel
-            showThumbs={true}
-            autoPlay
-            infiniteLoop
-            onChange={(index) => setActiveIndex(index)}
-          >
-            {images.map((image, index) => (
-              <div key={index} className="flex justify-center items-center mt-[2rem]">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={500}
-                  height={500}
-                  className="rounded-lg"
-                />
-              </div>
-            ))}
-          </Carousel>
-        </div>
-
-        <div className="flex flex-col justify-start items-center md:items-start text-center md:text-left mb-8 mt-8">
-          <div className="p-3 border-2 border-gray-300 bg-blue-400 mb-2 rounded-lg shadow-xl transition-all hover:bg-blue-500 hover:scale-105">
-            <p className="text-xl font-bold text-black">
-              {texts[activeIndex]?.title.split("Rcast Smart TV")[0]}
-              <span className="text-2xl font-bold text-white">
-                Rcast Smart TV
-              </span>
-              {texts[activeIndex]?.title.split("Rcast Smart TV")[1]}
-            </p>
-          </div>
-
-          <div className="p-3 border-2 border-gray-300 bg-green-500 mb-2 rounded-lg shadow-xl transition-all hover:bg-green-400 hover:scale-105">
-            <p className="text-xl font-bold text-black">
-            {texts[activeIndex]?.description.split("Rcast Mini")[0]}
-              <span className="text-2xl font-bold text-white">
-              Rcast Mini
-              </span>
-              {texts[activeIndex]?.description.split("Rcast Mini")[1]}
-            </p>
-          </div>
-
-          <div className="p-3 border-2 border-gray-300 bg-yellow-400 mb-2 rounded-lg shadow-xl transition-all hover:bg-yellow-300 hover:scale-105">
-            <div className="text-xl font-bold text-black">
-              {texts[activeIndex]?.mobileAppText.split("My Rcast App")[0]}
-                <span className="text-2xl font-bold text-white">
-                My Rcast App
-                </span>
-              {texts[activeIndex]?.mobileAppText.split("My Rcast App")[1]}
+      <div
+      className={`max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 mt-${activeIndex === 0 ? '[8rem]' : '[8rem]'}`}
+    >
+      <div>
+        <Carousel
+          showThumbs={true}
+          autoPlay
+          infiniteLoop
+          interval={10000}
+          onChange={(index) => setActiveIndex(index)}
+        >
+          {images.map((image, index) => (
+            <div key={index} className="flex justify-center items-center mt-[2rem]">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={500}
+                height={500}
+                className="rounded-lg"
+              />
             </div>
-          </div>
+          ))}
+        </Carousel>
+      </div>
 
-        <div className="p-3 border-2 border-gray-300 bg-purple-300 rounded-lg shadow-xl transition-all hover:bg-purple-400 hover:scale-105">
-            <p className="text-xl font-bold text-black">{texts[activeIndex]?.footerText}</p>
-          </div>
+      <div className="flex flex-col justify-start items-center md:items-start text-center md:text-left">
+        <div className="p-3 border-2 border-gray-300 bg-blue-400 mb-2 rounded-lg shadow-xl transition-all hover:bg-blue-500 hover:scale-105">
+          <p className="text-xl font-bold text-black">
+            {texts[activeIndex]?.title.split("Rcast Smart TV")[0]}
+            <span className="text-2xl font-bold text-white">Rcast Smart TV</span>
+            {texts[activeIndex]?.title.split("Rcast Smart TV")[1]}
+          </p>
         </div>
 
+        <div className="p-3 border-2 border-gray-300 bg-green-500 mb-2 rounded-lg shadow-xl transition-all hover:bg-green-400 hover:scale-105">
+          <p className="text-xl font-bold text-black">
+            {texts[activeIndex]?.description.split("Rcast Mini")[0]}
+            <span className="text-2xl font-bold text-white">Rcast Mini</span>
+            {texts[activeIndex]?.description.split("Rcast Mini")[1]}
+          </p>
+        </div>
+
+        <div className="p-3 border-2 border-gray-300 bg-yellow-400 mb-2 rounded-lg shadow-xl transition-all hover:bg-yellow-300 hover:scale-105">
+          <div className="text-xl font-bold text-black">
+            {texts[activeIndex]?.mobileAppText.split("My Rcast App")[0]}
+            <span className="text-2xl font-bold text-white">My Rcast App</span>
+            {texts[activeIndex]?.mobileAppText.split("My Rcast App")[1]}
+          </div>
+        </div>
+        
+        <div className="p-3 border-2 border-gray-300 bg-purple-300 rounded-lg shadow-xl transition-all hover:bg-purple-400 hover:scale-105">
+          <p className="text-xl font-bold text-black">{texts[activeIndex]?.footerText}</p>
+        </div>
       </div>
+    </div>
 
       <div className="p-6 bg-[#0a0f2c] rounded-[20px] mb-8">
         <h2 className="text-2xl font-bold text-center text-white mb-6">Rcast App is available in Android TV, Google TV, Fire TV, Fire Stick, Samsung TV App Stores and LG TV is under process</h2>
