@@ -56,12 +56,9 @@ const TechnologyPage = () => {
 
   return (
     <div className="bg-gradient-to-r from-blue-300 to-yellow-300 w-full p-10">
-      
-
       <div className="mt-6 p-6">
         <h2 className="text-center font-semibold text-2xl font-poppins text-blue-800 mt-[4rem]">Technology</h2>
       </div>
-
       <section className="text-center container mx-auto px-8 mt-6 flex justify-center items-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 md:gap-10">
           <div
@@ -124,10 +121,10 @@ const TechnologyPage = () => {
       </div>
 
       <div className="p-2">
-        <h2 className="text-center font-semibold text-2xl font-poppins text-blue-800 mt-[4rem]">Subscriber Management System</h2>
+        <h2 className="text-center font-semibold text-2xl font-poppins text-blue-800 mt-[1rem]">Subscriber Management System</h2>
       </div>
 
-      <div className="flex flex-col mt-10 md:flex-row items-center max-w-6xl mx-auto mb-8 space-y-6 md:space-y-0 md:space-x-8" id="animate-section">
+      <div className="flex flex-col mt-4 md:flex-row items-center max-w-6xl mx-auto mb-8 space-y-6 md:space-y-0 md:space-x-8" id="animate-section">
         <div
           className={`md:w-1/2 w-full h-full flex items-center justify-center ${
             isVisible ? "opacity-100 animate-slide-left" : "opacity-0"
