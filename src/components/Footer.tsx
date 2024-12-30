@@ -5,7 +5,6 @@ function Footer() {
   return (
     <footer className="bg-[#0a0f2c] text-white p-10">
       <div className="container md:w-full lg:w-[85%] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
-        
         <div>
           <h5 className="font-bold text-lg mb-1 ">Quick Link</h5>
           <hr className="w-[60px] font-extrabold border-t-2 mb-5" ></hr>
@@ -14,7 +13,6 @@ function Footer() {
               <i className="bi bi-chevron-right mr-2"></i>
               <a href="https://ulka.tv" className="hover:tracking-widest">ULKA TV</a>
             </li>
-            
             <li className="flex items-center">
               <i className="bi bi-chevron-right mr-2"></i>
               <a href="/smarttv" className="hover:tracking-widest">Smart TV</a>
@@ -40,7 +38,6 @@ function Footer() {
               ashish@techsai.com
             </li>
           </ul>
-
         </div>
 
         <div>
@@ -55,8 +52,6 @@ function Footer() {
             <img src="/resa.png" alt="Gallery 6" className="w-16 h-16 border-white border-2" />
           </div>
         </div>
-      </div>
-      <hr className="mt-12 lg:w-[86%] text-gray-400 border-slate-500 mx-auto" ></hr>
         <div className="container mx-auto px-4 text-center mt-6">
           <div className="flex justify-center space-x-6">
             <a href="https://www.linkedin.com" className="text-2xl"><FaLinkedin /></a>
@@ -64,8 +59,9 @@ function Footer() {
             <a href="https://www.instagram.com" className="text-2xl"><FaInstagram /></a>
             <a href="https://www.twitter.com" className="text-2xl"><FaTwitter /></a>
           </div>
-          <p className="mt-2">© 2024 City Online Media Private Limited.</p>
+          <p className="mt-2">City Online Media Private Limited.</p>
         </div>
+      </div>
     </footer>
   );
 }
