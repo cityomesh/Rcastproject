@@ -60,10 +60,22 @@ const Contactpage = () => {
                 <MapPin size={40} weight="bold" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-blue-900">Address :</h3>
+                <h3 className="text-lg font-semibold text-blue-900">Corporate Office :</h3>
                 <p className="text-gray-600">City Online Media Pvt Ltd.</p>
                 <p className="text-gray-600 text-sm">
                   709, 7th Floor, Aditya Trade Center, Ameerpet, Hyderabad, Telangana 500038
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-4">
+              <div className="text-blue-900">
+                <MapPin size={40} weight="bold" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-blue-900">Distributor :</h3>
+                <p className="text-gray-600">TECHSAI DIGITAL SOLUTION LLP.</p>
+                <p className="text-gray-600 text-sm">
+                 107, Hallmark, Vasant Oscar, L.B.S. Road, Mulund (West), Mumbai – 400 080.
                 </p>
               </div>
             </div>
@@ -74,7 +86,7 @@ const Contactpage = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-blue-900">Mobile :</h3>
-                <p className="text-gray-600">+91 8977522944</p>
+                <p className="text-gray-600">+91 96760 15678</p>
               </div>
             </div>
 
@@ -84,7 +96,7 @@ const Contactpage = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-blue-900">Email :</h3>
-                <p className="text-gray-600">support@ulka.tv</p>
+                <p className="text-gray-600">ashish@techsai.com</p>
               </div>
             </div>
           </div>

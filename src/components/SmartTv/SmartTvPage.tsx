@@ -76,25 +76,23 @@ const SmartTvPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-100 to-yellow-100 flex flex-col items-center justify-center px-4 py-2">
-      <div
-      className={`max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 mt-${activeIndex === 0 ? '[8rem]' : '[8rem]'}`}
-    >
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 mt-[8rem]">
       <div>
         <Carousel
           showThumbs={true}
           autoPlay
           infiniteLoop
-          interval={10000}
+          interval={50000}
           onChange={(index) => setActiveIndex(index)}
         >
           {images.map((image, index) => (
-            <div key={index} className="flex justify-center items-center mt-[2rem]">
+            <div key={index} className="flex justify-center items-center">
               <Image
                 src={image.src}
                 alt={image.alt}
                 width={500}
                 height={500}
-                className="rounded-lg"
+                className="rounded-lg mt-4"
               />
             </div>
           ))}
@@ -126,13 +124,13 @@ const SmartTvPage: React.FC = () => {
           </div>
         </div>
         
-        <div className="p-3 border-2 border-gray-300 bg-purple-300 rounded-lg shadow-xl transition-all hover:bg-purple-400 hover:scale-105">
+        <div className="p-3 border-2 border-gray-300 bg-purple-300 rounded-lg shadow-xl transition-all hover:bg-purple-400 hover:scale-105 mb-4">
           <p className="text-xl font-bold text-black">{texts[activeIndex]?.footerText}</p>
         </div>
       </div>
     </div>
 
-      <div className="p-6 bg-[#0a0f2c] rounded-[20px] mb-8">
+      <div className="p-6 bg-[#0a0f2c] rounded-[20px]">
         <h2 className="text-2xl font-bold text-center text-white mb-6">Rcast App is available in Android TV, Google TV, Fire TV, Fire Stick, Samsung TV App Stores and LG TV is under process</h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -210,7 +208,7 @@ const SmartTvPage: React.FC = () => {
                 className={`p-5 rounded-lg shadow-md w-full max-w-2xl hover:scale-105 transition-transform ${
                   text ===
                   "Rcast 4K compatible distribution system has TRAI approved Virtual STB Application for Smart TVs and Smart Phones."
-                    ? "bg-yellow-500 text-white hover:text-white hover:bg-[#0a0f2c]"
+                    ? "bg-gradient-to-r from-green-500 to-yellow-500"
                     : "bg-blue text-black hover:bg-blue-200 hover:text-black"
                 }`}
               >

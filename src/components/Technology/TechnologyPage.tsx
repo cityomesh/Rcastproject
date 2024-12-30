@@ -59,38 +59,36 @@ const TechnologyPage = () => {
       <div className="mt-6 p-6">
         <h2 className="text-center font-semibold text-2xl font-poppins text-blue-800 mt-[4rem]">Technology</h2>
       </div>
-      <section className="text-center container mx-auto px-8 mt-6 flex justify-center items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 md:gap-10">
-          <div
-            className="bg-white shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-blue-400   hover:ring-2 hover:ring-[#F7961E] transition-all duration-500 ease-in-out">
-            <div className="flex flex-col items-center group">
-              <h3 className="text-2xl mt-4 text-[#032963] hover:text-white">IPTV distributes live television channels on local broadband networks without any Internet data consumption & dedicated Cable TV Network.</h3>
-            </div>
-          </div>
-          <div
-            className="bg-white shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-blue-400 hover:ring-2 hover:ring-[#F7961E] transition-all duration-500 ease-in-out">
-            <div className="flex flex-col items-center group">            
-              <h3 className="text-2xl mt-4 text-[#032963] hover:text-white">All channels are transcoded to HEVC Codec supporting future 4k/8k Resolutions using AI-Nvidia GPUs offering the best quality in the Industry competing Major Global Players.</h3>
-            </div>
-          </div>
-
-          <div
-            className="bg-white shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-blue-400 hover:ring-2 hover:ring-[#F7961E] transition-all duration-500 ease-in-out">
-            <div className="flex flex-col items-center group">
-              <h3 className="text-2xl mt-4 text-[#032963] hover:text-white">Rcast have developed its own CDN system and not dependent on 3rd Party Vendors and they can be cascaded to save the trunk line capacity and offers regional advertisements. </h3>
-            </div>
-          </div>
-
-          <div
-            className="bg-white shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-blue-400   hover:ring-2 hover:ring-[#F7961E] transition-all duration-500 ease-in-out">
-            <div className="flex flex-col items-center group">
-              <h3 className="text-2xl mt-4 text-[#032963] hover:text-white">Lowest Trunk Line requirement for connecting CDN servers
-                150-300 Mbps for 250 SD+16 HD Channels
-                500-1000 Mbps for all the 1000 Channels.</h3>
-            </div>
+      <section className="text-center container mx-auto mt-6 flex justify-center items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 md:gap-10">
+        <div
+          className="bg-white shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-blue-400 hover:ring-2 hover:ring-[#F7961E]">
+          <div className="flex flex-col items-center group">
+            <h3 className="text-2xl mt-4 text-[#032963] hover:text-white">IPTV distributes live television channels on local broadband networks without any Internet data consumption & dedicated Cable TV Network.</h3>
           </div>
         </div>
-      </section>
+        <div
+          className="bg-white shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-blue-400 hover:ring-2 hover:ring-[#F7961E]">
+          <div className="flex flex-col items-center group">
+            <h3 className="text-2xl mt-4 text-[#032963] hover:text-white">All channels are transcoded to HEVC Codec supporting future 4k/8k Resolutions using AI-Nvidia GPUs offering the best quality in the Industry competing Major Global Players.</h3>
+          </div>
+        </div>
+
+        <div
+          className="bg-white shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-blue-400 hover:ring-2 hover:ring-[#F7961E]">
+          <div className="flex flex-col items-center group">
+            <h3 className="text-2xl mt-4 text-[#032963] hover:text-white">Rcast have developed its own CDN system and not dependent on 3rd Party Vendors and they can be cascaded to save the trunk line capacity and offers regional advertisements.</h3>
+          </div>
+        </div>
+
+        <div
+          className="bg-white shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-blue-400 hover:ring-2 hover:ring-[#F7961E]">
+          <div className="flex flex-col items-center group">
+            <h3 className="text-2xl mt-4 text-[#032963] hover:text-white">Lowest Trunk Line requirement for connecting CDN servers 150-300 Mbps for 250 SD+16 HD Channels 500-1000 Mbps for all the 1000 Channels.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
       <div className="text-center ">
@@ -121,78 +119,92 @@ const TechnologyPage = () => {
       </div>
 
       <div className="p-2">
-        <h2 className="text-center font-semibold text-2xl font-poppins text-blue-800 mt-[1rem]">Subscriber Management System</h2>
+        <h2 className="text-center font-semibold text-3xl font-poppins text-blue-800 mt-[1rem]">Subscriber Management System</h2>
       </div>
 
-      <div className="flex flex-col mt-4 md:flex-row items-center max-w-6xl mx-auto mb-8 space-y-6 md:space-y-0 md:space-x-8" id="animate-section">
-        <div
-          className={`md:w-1/2 w-full h-full flex items-center justify-center ${
-            isVisible ? "opacity-100 animate-slide-left" : "opacity-0"
-          }`}
-        >
-          <Image
-            src="/kiomn.png"
-            alt="Team Meeting"
-            width={600}
-            height={400}
-            className="object-contain max-w-full h-auto transition-opacity duration-1000 ease-in-out"
-          />
+        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto mb-8 xl:gap-[10rem] md:gap-[1rem] md:space-x-8 space-y-6 md:space-y-0" id="animate-section">
+          <div
+            className={`md:w-2/5 w-full h-full flex items-center justify-center ${
+              isVisible ? "opacity-100 animate-slide-left" : "opacity-0"
+            }`}
+          >
+            <Image
+              src="/gvf.png"
+              alt="Team Meeting"
+              width={1200}
+              height={400}
+              className="object-contain xl:max-w-[830px] md:max-w-[830px] h-auto transition-opacity duration-1000 ease-in-out"
+            />
+          </div>
+
+          <div
+            className={`md:w-3/5 w-full p-6 md:p-8 h-full ${
+              isVisible ? "opacity-100 animate-slide-right" : "opacity-0"
+            }`}
+          >
+            <h2 className="font-bold leading-8 text-black text-lg md:text-xl space-y-4">
+              <p>
+                • The Subscriber Management System provides multi-level reseller management and revenue sharing with all the stakeholders. It also includes enhanced CRM features for customer satisfaction. Android and iOS mobile apps are available for subscription management and instant activations.
+              </p>
+              <p>
+                • API integration with popular broadband billing systems offers combo packs with IPTV bouquets. Additionally, API integration to the DRM Application server enables the real-time push of subscription data and customer information to meet regulatory compliances.
+              </p>
+              <p>
+                • The system is built on a robust Linux operating system. The application and database servers can be independently hosted for scalability. Real-time scalable options like OpenStack and Kubernetes can be deployed for unlimited expansion.
+              </p>
+            </h2>
+          </div>
+
+          <style jsx>{`
+            @keyframes slide-left {
+              0% {
+                transform: translateX(-100%);
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0);
+                opacity: 1;
+              }
+            }
+
+            @keyframes slide-right {
+              0% {
+                transform: translateX(100%);
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0);
+                opacity: 1;
+              }
+            }
+
+            .animate-slide-left {
+              animation: slide-left 2s ease-out forwards;
+            }
+
+            .animate-slide-right {
+              animation: slide-right 2s ease-out forwards;
+            }
+          `}</style>
         </div>
 
-        <div
-          className={`md:w-1/2 w-full p-6 md:p-8 ${
-            isVisible ? "opacity-100 animate-slide-right" : "opacity-0"
-          }`}
-        >
-          <h2 className="font-bold leading-8 text-black text-lg md:text-xl space-y-4">
-            <p>
-              • The Subscriber Management System provides multi-level reseller management and revenue sharing with all the stakeholders. It also includes enhanced CRM features for customer satisfaction. Android and iOS mobile apps are available for subscription management and instant activations.
-            </p>
-            <p>
-              • API integration with popular broadband billing systems offers combo packs with IPTV bouquets. Additionally, API integration to the DRM Application server enables the real-time push of subscription data and customer information to meet regulatory compliances.
-            </p>
-            <p>
-              • The system is built on a robust Linux operating system. The application and database servers can be independently hosted for scalability. Real-time scalable options like OpenStack and Kubernetes can be deployed for unlimited expansion.
-            </p>
+      <div className="bg-gradient-to-r from-blue-500 via-gray-400 to-orange-300 py-9">
+        <div className="flex items-center justify-center gap-4 mb-8 flex-col md:flex-row">
+          <h2 className="font-semibold text-3xl font-poppins text-blue-800 text-center md:text-left">
+            DRM Token Server
           </h2>
+          <div className="w-full max-w-[230px]">
+            <Image
+              src="/pallycon.png"
+              alt="Large Facility Image"
+              width={350}
+              height={350}
+              className="rounded-lg w-full"
+              priority
+            />
+          </div>
         </div>
 
-        <style jsx>{`
-          @keyframes slide-left {
-            0% {
-              transform: translateX(-100%);
-              opacity: 0;
-            }
-            100% {
-              transform: translateX(0);
-              opacity: 1;
-            }
-          }
-
-          @keyframes slide-right {
-            0% {
-              transform: translateX(100%);
-              opacity: 0;
-            }
-            100% {
-              transform: translateX(0);
-              opacity: 1;
-            }
-          }
-
-          .animate-slide-left {
-            animation: slide-left 2s ease-out forwards;
-          }
-
-          .animate-slide-right {
-            animation: slide-right 2s ease-out forwards;
-          }
-        `}</style>
-      </div>
-
-
-      <div className="bg-gradient-to-r from-orange-500 via-orange-400 to-orange-300 py-9">
-        <h2 className="text-center font-semibold text-2xl font-poppins text-blue-800 mb-8">DRM Token Server</h2>
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div
@@ -204,7 +216,6 @@ const TechnologyPage = () => {
           ))}
         </div>
       </div>
-
 
       <div className="text-center">
         <h2 className="font-semibold text-2xl font-poppins text-blue-800 mt-[3rem] mb-8">Transcoding and Encryption Servers</h2>
@@ -293,7 +304,7 @@ const TechnologyPage = () => {
 
       <div className="flex flex-col items-center mt-10 space-y-4 mb-8 px-4 bg-gradient-to-r from-gray-500 via-yellow-400 to-orange-300 py-9">
         <div className="text-center">
-          <h2 className="font-semibold text-3xl font-poppins text-gray-600 mt-[3rem] mb-8">Streaming/CDN Server</h2>
+          <h2 className="font-semibold text-3xl font-poppins text-gray-600 mb-8">Streaming/CDN Server</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full sm:max-w-7xl mx-auto">
           {[

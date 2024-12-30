@@ -32,6 +32,7 @@ const Home = () => {
       >
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-left text-black font-bold">
+          <Link href="/">
             <Image
               src="/Rcast.png"
               alt="logo"
@@ -39,6 +40,7 @@ const Home = () => {
               height={isScrolled ? 60 : 80}
               className="rounded-lg transition-all duration-500 ease-in-out"
             />
+            </Link>
           </div>
 
           <div className="md:hidden px-4" onClick={toggleMobileMenu}>
@@ -71,6 +73,9 @@ const Home = () => {
             </li>
             <li className="cursor-pointer hover:text-[#F7961E] py-2 px-4 md:py-0 md:px-0">
               <Link href="/smarttv">Smart Apps</Link>
+            </li>
+            <li className="cursor-pointer hover:text-[#F7961E] py-2 px-4 md:py-0 md:px-0">
+              <Link href="/">Partners</Link>
             </li>
             <li className="cursor-pointer hover:text-[#F7961E] py-2 px-4 md:py-0 md:px-0">
               <Link href="/about">About</Link>

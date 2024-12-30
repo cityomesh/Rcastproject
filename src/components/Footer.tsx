@@ -12,7 +12,7 @@ function Footer() {
           <ul className="space-y-2">
             <li className="flex items-center">
               <i className="bi bi-chevron-right mr-2"></i>
-              <a href="https://ulka.tv/ulka-lite" className="hover:tracking-widest">ULKA LITE</a>
+              <a href="https://ulka.tv" className="hover:tracking-widest">ULKA TV</a>
             </li>
             
             <li className="flex items-center">
@@ -27,18 +27,17 @@ function Footer() {
           <hr className="w-[60px] font-extrabold border-t-2 mb-5" ></hr>
           <ul className="space-y-4">
             <li className=" items-center">
-              <strong>City Online Media Pvt Ltd.</strong>
+              <strong>TECHSAI DIGITAL SOLUTION LLP.</strong>
               <br />
-              Aditya Trade Center, 7 th Floor-709 Ameerpet,
-              <br /> Hyderabad, Telangana 500038
+              107, Hallmark, Vasant Oscar, L.B.S. Road, Mulund (West), Mumbai – 400 080.
             </li>
             <li className="flex items-center">
               <i className="bi bi-telephone mr-2"></i>
-              +91 8977522944
+              +91 96760 15678
             </li>
             <li className="flex items-center">
               <i className="bi bi-envelope mr-2"></i>
-              support@ulka.tv
+              ashish@techsai.com
             </li>
           </ul>
 
@@ -55,25 +54,6 @@ function Footer() {
             <img src="/rem.png" alt="Gallery 5" className="w-16 h-16 border-white border-2" />
             <img src="/resa.png" alt="Gallery 6" className="w-16 h-16 border-white border-2" />
           </div>
-        </div>
-
-        <div>
-          <h5 className="font-bold text-lg mb-1">Newsletter</h5>
-          <hr className="w-[60px] font-extrabold border-t-2 mb-5" ></hr>
-          <p className="mb-4">City Online Media Private Limited.</p>
-          <form className="flex items-center border-b  bg-white relative border-gray-500 py-3">
-            <input
-              type="email"
-              placeholder="Your email"
-              className=" focus:outline-none text-black placeholder-gray-400 px-2 flex-grow"
-            />
-            <button
-              type="submit"
-              className="bg-[#0a0f3e] text-white absolute right-4 px-4 py-2 ml-3 "
-            >
-              SignUp
-            </button>
-          </form>
         </div>
       </div>
       <hr className="mt-12 lg:w-[86%] text-gray-400 border-slate-500 mx-auto" ></hr>
