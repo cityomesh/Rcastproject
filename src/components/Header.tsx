@@ -75,9 +75,6 @@ const Home = () => {
               <Link href="/smarttv">Smart Apps</Link>
             </li>
             <li className="cursor-pointer hover:text-[#F7961E] py-2 px-4 md:py-0 md:px-0">
-              <Link href="/">Partners</Link>
-            </li>
-            <li className="cursor-pointer hover:text-[#F7961E] py-2 px-4 md:py-0 md:px-0">
               <Link href="/about">About</Link>
             </li>
             <li className="cursor-pointer hover:text-[#F7961E] py-2 px-4 md:py-0 md:px-0">
