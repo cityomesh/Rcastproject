@@ -3,14 +3,6 @@ import React from "react";
 import Image from "next/image";
 
 const SmartTvPage: React.FC = () => {
-  const platforms = [
-    { name: "Set-Top-Box", src: "/tvvs.png" },
-    { name: "Android TV", src: "/ytye.png" },
-    { name: "Google TV", src: "/hytyrd.png" },
-    { name: "Fire TV", src: "/tre.png" },
-    { name: "Fire Stick & Android Stick", src: "/firetvstick.png" },
-    { name: "Samsung TV", src: "/tvsvmsung.png" },
-  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-300 to-yellow-300 flex flex-col items-center justify-start px-4">
