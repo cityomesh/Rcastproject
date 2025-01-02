@@ -82,7 +82,7 @@ const SmartTvPage: React.FC = () => {
           showThumbs={true}
           autoPlay
           infiniteLoop
-          interval={50000}
+          interval={1000}
           onChange={(index) => setActiveIndex(index)}
         >
           {images.map((image, index) => (

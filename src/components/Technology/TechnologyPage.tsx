@@ -56,45 +56,74 @@ const TechnologyPage = () => {
 
   return (
     <div className="bg-gradient-to-r from-blue-300 to-yellow-300 w-full p-10">
-      <div className="mt-6 p-6">
-        <h2 className="text-center font-semibold text-2xl font-poppins text-blue-800 mt-[4rem]">Technology</h2>
+      <div className="mt-[5rem] flex justify-center">
+        <h2
+          className="font-bold text-lg sm:text-lg md:text-xl text-white bg-[#0a0f2c] py-2 px-4 sm:py-2 sm:px-6 rounded-lg shadow-lg border-2 border-transparent group duration-300"
+        >
+          IPTV Headend Schematic
+        </h2>
       </div>
-      <section className="text-center container mx-auto mt-6 flex justify-center items-center">
+
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4">
+        <div className="w-full max-w-[1430px] flex justify-center">
+          <Image
+            src="/iptvtechonolgypage.png"
+            alt="Large Facility Image"
+            width={1500}
+            height={900}
+            className="rounded-lg"
+            priority
+          />
+        </div>
+      </div>
+      
+      <div className="flex justify-center">
+        <h2
+          className="font-bold text-lg sm:text-lg md:text-xl text-white bg-[#0a0f2c] py-2 px-4 sm:py-2 sm:px-6 rounded-lg shadow-lg border-2 border-transparent group duration-300"
+        >
+          Technology
+        </h2>
+      </div>
+      <section className="text-center container mx-auto mt-[2rem] flex justify-center items-center">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 md:gap-10">
         <div
-          className="bg-white shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-blue-400 hover:ring-2 hover:ring-[#F7961E]">
+          className="bg-gray-300 shadow-lg border border-gray-300 rounded-[20px] p-3 md:p-8 text-center cursor-pointer hover:bg-pink-300">
           <div className="flex flex-col items-center group">
-            <h3 className="text-2xl mt-4 text-[#032963] hover:text-white">IPTV distributes live television channels on local broadband networks without any Internet data consumption & dedicated Cable TV Network.</h3>
+            <h3 className="text-[20px] mt-4 text-[#032963] hover:text-white">IPTV distributes live television channels on local broadband networks without any Internet data consumption & dedicated Cable TV Network.</h3>
           </div>
         </div>
         <div
-          className="bg-white shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-blue-400 hover:ring-2 hover:ring-[#F7961E]">
+          className="bg-gray-300 shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-pink-300">
           <div className="flex flex-col items-center group">
-            <h3 className="text-2xl mt-4 text-[#032963] hover:text-white">All channels are transcoded to HEVC Codec supporting future 4k/8k Resolutions using AI-Nvidia GPUs offering the best quality in the Industry competing Major Global Players.</h3>
-          </div>
-        </div>
-
-        <div
-          className="bg-white shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-blue-400 hover:ring-2 hover:ring-[#F7961E]">
-          <div className="flex flex-col items-center group">
-            <h3 className="text-2xl mt-4 text-[#032963] hover:text-white">Rcast have developed its own CDN system and not dependent on 3rd Party Vendors and they can be cascaded to save the trunk line capacity and offers regional advertisements.</h3>
+            <h3 className="text-[20px] mt-4 text-[#032963] hover:text-white">All channels are transcoded to HEVC Codec supporting future 4k/8k Resolutions using AI-Nvidia GPUs offering the best quality in the Industry competing Major Global Players.</h3>
           </div>
         </div>
 
         <div
-          className="bg-white shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-blue-400 hover:ring-2 hover:ring-[#F7961E]">
+          className="bg-gray-300 shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-pink-300">
           <div className="flex flex-col items-center group">
-            <h3 className="text-2xl mt-4 text-[#032963] hover:text-white">Lowest Trunk Line requirement for connecting CDN servers 150-300 Mbps for 250 SD+16 HD Channels 500-1000 Mbps for all the 1000 Channels.</h3>
+            <h3 className="text-[20px] mt-4 text-[#032963] hover:text-white">Rcast have developed its own CDN system and not dependent on 3rd Party Vendors and they can be cascaded to save the trunk line capacity and offers regional advertisements.</h3>
+          </div>
+        </div>
+
+        <div
+          className="bg-gray-300 shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-pink-300">
+          <div className="flex flex-col items-center group">
+            <h3 className="text-[20px] mt-4 text-[#032963] hover:text-white">Lowest Trunk Line requirement for connecting CDN servers 150-300 Mbps for 250 SD+16 HD Channels 500-1000 Mbps for all the 1000 Channels.</h3>
           </div>
         </div>
       </div>
     </section>
 
-
-      <div className="text-center ">
-        <h2 className="font-semibold text-2xl font-poppins text-blue-800 mt-[3rem]">DRM Application Server</h2>
+      <div className="flex justify-center mt-8">
+        <h2
+          className="font-bold text-lg sm:text-lg md:text-xl text-white bg-[#0a0f2c] py-2 px-4 sm:py-2 sm:px-6 rounded-lg shadow-lg border-2 border-transparent group duration-300"
+        >
+          DRM Application Server
+        </h2>
       </div>
-      <div className="flex flex-col items-center mt-10 space-y-4 mb-8 px-4">
+
+      <div className="flex flex-col items-center mt-10 space-y-4 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full sm:max-w-6xl mx-auto">
           {[
             "City Media is a technical partner of Pallycon Multi-DRM encryption service Provider and developed the DRM Application Server to meet the TRAI regulatory specifications. The DRM Server is integrated with Multi-DRM Key server with Site ID, Site Key and Access Key.",
@@ -103,13 +132,13 @@ const TechnologyPage = () => {
           ].map((text, index) => (
             <div
               key={index}
-              className="p-4 bg-[#0a0f2c] rounded shadow w-full transition duration-300 hover:bg-white group"
+              className="bg-gray-300 shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-green-300"
               style={{
                 maxWidth: "400px",
               }}
             >
-              <h2 className="text-xl sm:text-xl font-bold leading-6 sm:leading-7 text-white text-center group-hover:text-blue-500">
-                <span className="block text-[20px] text-[#33CCC5] mt-2 group-hover:text-black">
+              <h2 className="bg-gray-300 shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-black">
+                <span className="block text-[20px] text-black mt-2 group-hover:text-white hover:text-white">
                   {text}
                 </span>
               </h2>
@@ -118,79 +147,83 @@ const TechnologyPage = () => {
         </div>
       </div>
 
-      <div className="p-2">
-        <h2 className="text-center font-semibold text-3xl font-poppins text-blue-800 mt-[1rem]">Subscriber Management System</h2>
+      <div className="flex justify-center mt-8">
+        <h2
+          className="font-bold text-lg sm:text-lg md:text-xl text-white bg-[#0a0f2c] py-2 px-4 sm:py-2 sm:px-6 rounded-lg shadow-lg border-2 border-transparent group duration-300 mb-6"
+        >
+          Subscriber Management System
+        </h2>
       </div>
 
-        <div className="flex flex-col md:flex-row items-center max-w-6xl mx-auto mb-8 xl:gap-[10rem] md:gap-[1rem] md:space-x-8 space-y-6 md:space-y-0" id="animate-section">
-          <div
-            className={`md:w-2/5 w-full h-full flex items-center justify-center ${
-              isVisible ? "opacity-100 animate-slide-left" : "opacity-0"
-            }`}
-          >
-            <Image
-              src="/gvf.png"
-              alt="Team Meeting"
-              width={1200}
-              height={400}
-              className="object-contain xl:max-w-[830px] md:max-w-[830px] h-auto transition-opacity duration-1000 ease-in-out"
-            />
-          </div>
+    <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto mb-8 xl:gap-[10rem] md:gap-[1rem] md:space-x-6 space-y-6 md:space-y-0" id="animate-section">
+      <div
+        className={`md:w-2/5 w-full h-full flex items-center justify-center ${
+          isVisible ? "opacity-100 animate-slide-left" : "opacity-0"
+        }`}
+      >
+        <Image
+          src="/gvf.png"
+          alt="Team Meeting"
+          width={1200}
+          height={400}
+          className="object-contain xl:max-w-[830px] md:max-w-[830px] h-auto transition-opacity duration-1000 ease-in-out"
+        />
+      </div>
 
-          <div
-            className={`md:w-3/5 w-full p-6 md:p-8 h-full ${
-              isVisible ? "opacity-100 animate-slide-right" : "opacity-0"
-            }`}
-          >
-            <h2 className="font-bold leading-8 text-black text-lg md:text-xl space-y-4">
-              <p>
-                • The Subscriber Management System provides multi-level reseller management and revenue sharing with all the stakeholders. It also includes enhanced CRM features for customer satisfaction. Android and iOS mobile apps are available for subscription management and instant activations.
-              </p>
-              <p>
-                • API integration with popular broadband billing systems offers combo packs with IPTV bouquets. Additionally, API integration to the DRM Application server enables the real-time push of subscription data and customer information to meet regulatory compliances.
-              </p>
-              <p>
-                • The system is built on a robust Linux operating system. The application and database servers can be independently hosted for scalability. Real-time scalable options like OpenStack and Kubernetes can be deployed for unlimited expansion.
-              </p>
-            </h2>
-          </div>
+      <div
+        className={`md:w-3/2 w-full p-6 md:p-8 h-full ${
+          isVisible ? "opacity-100 animate-slide-right" : "opacity-0"
+        }`}
+      >
+        <h2 className="font-bold leading-8 text-black text-lg md:text-xl space-y-4">
+          <p>
+            • The Subscriber Management System provides multi-level reseller management and revenue sharing with all the stakeholders. It also includes enhanced CRM features for customer satisfaction. Android and iOS mobile apps are available for subscription management and instant activations.
+          </p>
+          <p>
+            • API integration with popular broadband billing systems offers combo packs with IPTV bouquets. Additionally, API integration to the DRM Application server enables the real-time push of subscription data and customer information to meet regulatory compliances.
+          </p>
+          <p>
+            • The system is built on a robust Linux operating system. The application and database servers can be independently hosted for scalability. Real-time scalable options like OpenStack and Kubernetes can be deployed for unlimited expansion.
+          </p>
+        </h2>
+      </div>
 
-          <style jsx>{`
-            @keyframes slide-left {
-              0% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              100% {
-                transform: translateX(0);
-                opacity: 1;
-              }
-            }
+      <style jsx>{`
+        @keyframes slide-left {
+          0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
 
-            @keyframes slide-right {
-              0% {
-                transform: translateX(100%);
-                opacity: 0;
-              }
-              100% {
-                transform: translateX(0);
-                opacity: 1;
-              }
-            }
+        @keyframes slide-right {
+          0% {
+            transform: translateX(100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
 
-            .animate-slide-left {
-              animation: slide-left 2s ease-out forwards;
-            }
+        .animate-slide-left {
+          animation: slide-left 2s ease-out forwards;
+        }
 
-            .animate-slide-right {
-              animation: slide-right 2s ease-out forwards;
-            }
-          `}</style>
-        </div>
+        .animate-slide-right {
+          animation: slide-right 2s ease-out forwards;
+        }
+      `}</style>
+    </div>
 
-      <div className="bg-gradient-to-r from-blue-500 via-gray-400 to-orange-300 py-9">
+      <div className="bg-gradient-to-r from-[#0a0f2c] via-gray-400 to-green-300 py-9 shadow-lg">
         <div className="flex items-center justify-center gap-4 mb-8 flex-col md:flex-row">
-          <h2 className="font-semibold text-3xl font-poppins text-blue-800 text-center md:text-left">
+          <h2 className="font-semibold text-2xl font-poppins text-blue-900 text-center md:text-left">
             DRM Token Server
           </h2>
           <div className="w-full max-w-[230px]">
@@ -217,15 +250,21 @@ const TechnologyPage = () => {
         </div>
       </div>
 
-      <div className="text-center">
-        <h2 className="font-semibold text-2xl font-poppins text-blue-800 mt-[3rem] mb-8">Transcoding and Encryption Servers</h2>
+      <div className="flex justify-center mt-8 mb-8">
+        <h2
+          className="font-bold text-lg sm:text-lg md:text-xl text-white bg-[#0a0f2c] py-2 px-4 sm:py-2 sm:px-6 rounded-lg shadow-lg border-2 border-transparent group duration-300"
+        >
+          Transcoding and Encryption Servers
+        </h2>
       </div>
+
+
       <div className="flex flex-wrap justify-center gap-5">
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
           transition={{ duration: 1.5, type: "spring", stiffness: 50 }}
-          className="bg-[#0a0f2c] text-white p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
+          className="bg-gray-200 text-black p-5 rounded-lg shadow-lg w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="text-lg font-bold mb-2">Transcoding and Encryption is implemented in a single process the output streams are connected to the distribution Streaming / CDN servers.</h2>
@@ -235,7 +274,7 @@ const TechnologyPage = () => {
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
           transition={{ duration: 1.5, type: "spring", stiffness: 50 }}
-          className="bg-[#0a0f2c] text-white p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
+          className="bg-gray-200 text-black p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="text-lg font-bold mb-2">If the Encoders deployed are already supported with the required codec and file format only Encryption can be implemented saving GPU resources.</h2>
@@ -245,7 +284,7 @@ const TechnologyPage = () => {
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
           transition={{ duration: 1.5, type: "spring", stiffness: 50, delay: 0.5 }}
-          className="bg-[#0a0f2c] text-white p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
+          className="bg-gray-200 text-black p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="text-lg font-bold mb-2">The Transcoding / Encryption Servers can accept almost all types of input streams from the Encoders.</h2>
@@ -255,7 +294,7 @@ const TechnologyPage = () => {
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
           transition={{ duration: 1.5, type: "spring", stiffness: 50, delay: 0.5 }}
-          className="bg-[#0a0f2c] text-white p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
+          className="bg-gray-200 text-black p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="text-lg font-bold mb-2">IRDs which includes Multicast/Unicast, MPTS/SPTS, MPEG-2, MPEG-4, H.264, H.265, MPEG-TS, HLS, MPEG-DASH etc.</h2>
@@ -265,7 +304,7 @@ const TechnologyPage = () => {
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
           transition={{ duration: 1.5, type: "spring", stiffness: 50, delay: 0.5  }}
-          className="bg-[#0a0f2c] text-white p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
+          className="bg-gray-200 text-black p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="text-lg font-bold mb-2">Professional Nvidia GPUs are used in Transcoder Servers and support 100 to 160 streams per server as per the Server and GPU specifications.</h2>
@@ -275,7 +314,7 @@ const TechnologyPage = () => {
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
           transition={{ duration: 1.5, type: "spring", stiffness: 50, delay: 0.5  }}
-          className="bg-[#0a0f2c] text-white p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
+          className="bg-gray-200 text-black p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="text-lg font-bold mb-2"> N+1 Servers are recommended for redundancy and the configurations can be backed up and restored in the Spare Server.</h2>
@@ -285,7 +324,7 @@ const TechnologyPage = () => {
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
           transition={{ duration: 1.5, type: "spring", stiffness: 50, delay: 0.5  }}
-          className="bg-[#0a0f2c] text-white p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
+          className="bg-gray-200 text-black p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="text-lg font-bold mb-2">Web browser based configuration and management of the channels is available. The Server and GPU resources also can be monitored remotely. </h2>
@@ -294,7 +333,7 @@ const TechnologyPage = () => {
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
           transition={{ duration: 1.5, type: "spring", stiffness: 50, delay: 0.5  }}
-          className="bg-[#0a0f2c] text-white p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
+          className="bg-gray-200 text-black p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="text-lg font-bold mb-2">All the Channels status including the bitrates can be monitored to ensure 24/7 operation.</h2>
@@ -302,9 +341,9 @@ const TechnologyPage = () => {
       </div>
 
 
-      <div className="flex flex-col items-center mt-10 space-y-4 mb-8 px-4 bg-gradient-to-r from-gray-500 via-yellow-400 to-orange-300 py-9">
+      <div className="flex flex-col items-center mt-10 space-y-4 mb-8 px-4 bg-gradient-to-r from-gray-500 via-black to-pink-300 py-9">
         <div className="text-center">
-          <h2 className="font-semibold text-3xl font-poppins text-gray-600 mb-8">Streaming/CDN Server</h2>
+          <h2 className="font-semibold text-3xl font-poppins text-white mb-8">Streaming/CDN Server</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full sm:max-w-7xl mx-auto">
           {[

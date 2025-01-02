@@ -59,13 +59,13 @@ const SmartConnectPage = () => {
   ];
   
   return (
-    <div className="bg-white">
+    <div className="bg-white w-full p-10">
       <section className="container mx-auto px-4 flex flex-col justify-center mt-[8rem] mb-8">
         <div className="flex flex-wrap gap-6 justify-center">
           {services.map((service, index) => (
             <div
               key={index}
-              className={`bg-[#0a0f2c] rounded-lg shadow-lg p-6 flex flex-col justify-between items-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-400 w-64 h-50`}
+              className={`bg-slate-800	 rounded-lg shadow-lg p-6 flex flex-col justify-between items-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-400 w-64 h-50`}
             >
               <h3 className="text-xl font-semibold text-white text-center">{service.title}</h3>
               <img
@@ -83,9 +83,9 @@ const SmartConnectPage = () => {
           {servicesproject.map((servicesproject, index) => (
             <div
               key={index}
-              className="flex flex-col items-start rounded-[20px] text-[#032963] text-left p-6 border border-gray-300 transition-colors duration-300 hover:bg-[#032963] hover:text-white"
+              className="flex flex-col items-start rounded-[20px] text-[#032963] p-6 border border-gray-300 transition-colors duration-300 hover:bg-[#0a0f2c] hover:text-white"
             >
-              <p className="tracking-wider text-lg hover:text-white">{servicesproject.description}</p>
+              <p className="tracking-wider text-xl hover:text-white">{servicesproject.description}</p>
             </div>
           ))}
         </div>
@@ -93,7 +93,7 @@ const SmartConnectPage = () => {
 
       <div className="container lg:w-[80%] mb-8 mx-auto p-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <div className="border overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
+          <div className="overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
             <img
               src="./devsg.png"
               alt="Project 1"
@@ -104,27 +104,27 @@ const SmartConnectPage = () => {
                 href="https://ulka.tv/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-teal-600 flex font-bold items-center mt-2"
+                className="text-[#0a0f2c] flex font-bold items-center mt-2"
               >
                 View Website
               </a>
             </div>
           </div>
-          <div className="border overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
+          <div className="overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
             <img
               src="./iptvv.jpg"
               alt="Project 2"
               className="w-full h-[12rem] object-cover"
             />
           </div>
-          <div className="border overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
+          <div className="overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
             <img
               src="./futures4.jpg"
               alt="Project 3"
               className="w-full h-[12rem] object-cover"
             />
           </div>
-          <div className="border overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
+          <div className="overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
             <img
               src="./iuysa.png"
               alt="Project 4"
@@ -133,7 +133,6 @@ const SmartConnectPage = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

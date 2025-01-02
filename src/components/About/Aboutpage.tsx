@@ -18,28 +18,28 @@ const Aboutpage = () => {
     },
     {
       content: "ULKA TV using Rcast successfully passed all the Audits conducted by the Broadcasters and its own self Audits for the last four years.",
-      bgColor: "bg-red-500",
+      bgColor: "bg-yellow-400",
     },
   ];
 
   return (
     <div className="bg-white">
       <div className="w-full">
-      <div className="max-w-8xl mx-auto p-8 mt-[6rem]">
+      <div className="max-w-8xl mx-auto p-6 mt-[6rem]">
         <h1 className="text-center text-2xl text-blue-900 mt-2 font-bold mb-8">
           ABOUT US  
         </h1>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 font-bold text-[22px] mb-8">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 font-bold text-[20px] mb-8">
           {fourCardsData.map((card, index) => (
             <div
               key={index}
-              className={`p-4 rounded-lg text-white flex flex-col justify-center items-center h-[450px] ${card.bgColor} relative group transition-colors duration-300`}
+              className={`p-4 rounded-lg text-bg-slate-950 flex flex-col justify-center items-center h-[400px] ${card.bgColor} relative group transition-colors duration-300`}
             >
               <div
                 className="absolute inset-0 rounded-full bg-purple-600 opacity-0 scale-50 group-hover:opacity-50 group-hover:scale-100 transition-all duration-300 pointer-events-none"
                 style={{
-                  width: "22rem",
-                  height: "22rem",
+                  width: "20rem",
+                  height: "20rem",
                   margin: "auto",
                   top: 0,
                   bottom: 0,

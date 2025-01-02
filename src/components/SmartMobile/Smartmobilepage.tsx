@@ -15,7 +15,7 @@ const Smartmobilepage = () => {
       <div className="flex flex-col md:flex-row justify-center items-center gap-4">
         <div className="w-full max-w-[830px]">
           <Image
-            src="/smarttvadd.png"
+            src="/ulkaminiphone.png"
             alt="Large Facility Image"
             width={1500}
             height={600}

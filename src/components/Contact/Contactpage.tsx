@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { EnvelopeSimple, Phone, MapPin } from "@phosphor-icons/react";
-// import { sendMessage } from "@/services/Contact/ContactApiService"
 
 const Contactpage = () => {
   const [formData, setFormData] = useState({
@@ -52,7 +51,6 @@ const Contactpage = () => {
     <div className="bg-white">
       <div className="container mx-auto p-6">
         <div className="flex flex-col lg:flex-row justify-center mt-32 gap-6">
-          {/* Contact Info Section */}
           <div className="lg:w-1/2 space-y-6">
             <h2 className="text-2xl font-bold text-gray-800">Get In Touch</h2>
             <div className="flex items-start space-x-4">
@@ -101,7 +99,6 @@ const Contactpage = () => {
             </div>
           </div>
 
-          {/* Form Section */}
           <div className="lg:w-1/2 bg-white shadow-md rounded-lg p-6">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="flex flex-col lg:flex-row gap-4">

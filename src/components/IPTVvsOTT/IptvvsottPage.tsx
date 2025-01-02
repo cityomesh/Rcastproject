@@ -38,14 +38,14 @@ const IptvvsottPage = () => {
 
   return (
     <div className="bg-gradient-to-r from-blue-200 to-yellow-200 w-full p-4">
-      <section className="container mx-auto px-4 mt-[9rem] mb-8 flex justify-center">
+      <section className="container mx-auto px-4 mt-[6rem] mb-8 flex justify-center">
         <div className="w-full max-w-4xl">
-          <div className="text-2xl font-bold text-center mb-4">IPTV vs OTT</div>
+          <div className="text-3xl font-bold text-center mb-4">IPTV vs OTT</div>
           <div className="flex flex-col gap-4">
             {faqData.map((faq) => (
-              <div key={faq.id} className="rounded-lg bg-pink-300 p-4">
+              <div key={faq.id} className="rounded-lg bg-slate-800 p-4">
                 <motion.button
-                  className="w-full text-left text-lg font-medium flex justify-between items-center text-blue hover:bg-white hover:text-blue-800 hover:border-blue-800 p-2"
+                  className="w-full text-white text-xl font-medium flex justify-between items-center text-blue hover:bg-pink-300 hover:text-blue-800 hover:border-blue-800 p-2"
                   onClick={() => toggleAccordion(faq.id)}
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
