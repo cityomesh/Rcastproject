@@ -38,10 +38,10 @@ const TechnologyPage = () => {
       title: "Pallycon is a Multi-DRM product of INKA networks who is a pioneer in the field of Digital Rights Management Software.",
     },
     {
-      title: "It supports Google Widevine, Apple Fairplay, Microsoft Playready. City Media DRM server is currently using only Google Widevine.",
+      title: "It supports Google Widevine, Apple Fairplay, Microsoft Playready. Rcast DRM server is currently using only Google Widevine.",
     },
     {
-      title: "Authorizations tokens were issued to the subscribers for each channel access as per the subscription status of the subscriber in the the DRM Application Server which is pushed from the SMS server at the time of subscription activations. ",
+      title: "Authorizations tokens were issued to the subscribers for each channel access as per the subscription status of the subscriber in the DRM Application Server which is pushed from the SMS server at the time of subscription activations. ",
     },
     {
       title: "The token log server maintains the logs with subscriber id, device id, channel id, with time stamps. These logs provide subscriber viewership analysis of channels for rating of the channels which is authentic. ",
@@ -50,7 +50,7 @@ const TechnologyPage = () => {
       title: "Pallycon provides forensic watermarking, Key rotation, Blacklisting and whitelisting of Device IDs used by subscribers.",
     },
     {
-      title: " The token server logs were maintained locally by CityMedia and in the cloud by Pallycon.",
+      title: " Rcast token server logs were maintained locally and in the cloud by Pallycon.",
     },
   ];
 
@@ -95,7 +95,7 @@ const TechnologyPage = () => {
         <div
           className="bg-gray-300 shadow-lg border border-gray-300 rounded-[20px] p-5 md:p-8 text-center cursor-pointer hover:bg-pink-300">
           <div className="flex flex-col items-center group">
-            <h3 className="text-[20px] mt-4 text-[#032963] hover:text-white">All channels are transcoded to HEVC Codec supporting future 4k/8k Resolutions using AI-Nvidia GPUs offering the best quality in the Industry competing Major Global Players.</h3>
+            <h3 className="text-[20px] mt-4 text-[#032963] hover:text-white">All channels are transcoded to HEVC Codec supporting future 4K/8K Resolutions using AI-Nvidia GPUs offering the best quality in the Industry competing Major Global Players.</h3>
           </div>
         </div>
 
@@ -258,7 +258,6 @@ const TechnologyPage = () => {
         </h2>
       </div>
 
-
       <div className="flex flex-wrap justify-center gap-5">
         <motion.div
           initial={{ x: "-100vw" }}
@@ -267,9 +266,8 @@ const TechnologyPage = () => {
           className="bg-gray-200 text-black p-5 rounded-lg shadow-lg w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
           whileHover={{ scale: 1.05 }}
         >
-          <h2 className="text-lg font-bold mb-2">Transcoding and Encryption is implemented in a single process the output streams are connected to the distribution Streaming / CDN servers.</h2>
+          <h2 className="text-lg font-bold mb-2">Transcoding and Encryption is implemented in a single process. The output streams are connected to the distribution Streaming / CDN servers.</h2>
         </motion.div>
-
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
@@ -279,7 +277,6 @@ const TechnologyPage = () => {
         >
           <h2 className="text-lg font-bold mb-2">If the Encoders deployed are already supported with the required codec and file format only Encryption can be implemented saving GPU resources.</h2>
         </motion.div>
-
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
@@ -289,7 +286,6 @@ const TechnologyPage = () => {
         >
           <h2 className="text-lg font-bold mb-2">The Transcoding / Encryption Servers can accept almost all types of input streams from the Encoders.</h2>
         </motion.div>
-
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
@@ -299,7 +295,6 @@ const TechnologyPage = () => {
         >
           <h2 className="text-lg font-bold mb-2">IRDs which includes Multicast/Unicast, MPTS/SPTS, MPEG-2, MPEG-4, H.264, H.265, MPEG-TS, HLS, MPEG-DASH etc.</h2>
         </motion.div>
-
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
@@ -307,9 +302,8 @@ const TechnologyPage = () => {
           className="bg-gray-200 text-black p-5 rounded-lg shadow-md w-full max-w-2xl mb-5 hover:bg-blue-400 hover:text-black"
           whileHover={{ scale: 1.05 }}
         >
-          <h2 className="text-lg font-bold mb-2">Professional Nvidia GPUs are used in Transcoder Servers and support 100 to 160 streams per server as per the Server and GPU specifications.</h2>
+          <h2 className="text-lg font-bold mb-2">Professional Nvidia GPUs are used in Transcoder Servers and support 100 to 300 streams per server as per the Server and GPU specifications.</h2>
         </motion.div>
-
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
@@ -319,7 +313,6 @@ const TechnologyPage = () => {
         >
           <h2 className="text-lg font-bold mb-2"> N+1 Servers are recommended for redundancy and the configurations can be backed up and restored in the Spare Server.</h2>
         </motion.div>
-
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
@@ -347,7 +340,7 @@ const TechnologyPage = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full sm:max-w-7xl mx-auto">
           {[
-            "Streaming/CDN(Content Delivery Network) Servers play a major role is in distribution of IPTV services. We use opensource Ubuntu 24.04 Ubuntu server Operating System. All X86-64 hardware are supported and Network Ports capacity should meet the output requirement.",
+            "Streaming/CDN(Content Delivery Network) Servers play a major role in distribution of IPTV services. We use opensource Ubuntu 24.04 Ubuntu server Operating System. All X86-64 hardware are supported and Network Ports capacity should meet the output requirement.",
             "Hardware estimate for the concurrent subscriber connections to the CDN Server is 500 to 1000 subscribers per Core of the CPU provided network port capacity is available. Minimum RAM of 8Gb and 16Gb of storage is required.",
             "CDN servers can be cascaded without effecting any loss of quality. CDN servers are addressable from the central monitoring system with live view of the input and output stream information.",
             "CDN servers pull the source streams only when requested by any of the user hence saving the bandwidth of the trunk line. The same input stream source is multiplied to all the requested subscribers on demand.",

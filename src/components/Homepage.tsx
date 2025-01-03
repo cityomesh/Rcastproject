@@ -10,15 +10,15 @@ const Homepage = () => {
   const servicesproject = [
     {
       description:
-        "• We distribute nearly 700 licensed Satellite Channels and can include local channels on select CDN servers as per requirements of distributors.",
+        "• We can distribute 10000+ Channels and can include local channels on select CDN servers as per requirements of distributors.",
     },
     {
       description:
-        "• We hold Interconnect Agreements with all Major Broadcasters including Star TV, ZEE, SONY, TV18, ETV, SUN, Gemini, Times, India Today, Discovery, OTV, NDTV and others.",
+        "• Our Customers have Interconnect Agreements with all Major Broadcasters including Star TV, ZEE, SONY, TV18, ETV, SUN, Gemini, Times, India Today, Discovery, OTV, NDTV and others.",
     },
     {
       description:
-        "• We offer best value Regional and Multilingual Packages, which includes 300+ Free to Air Channels.",
+        "• Additional Features of Timeshifted channels and Video on Demand can be deployed as per requirement.",
     },
     {
       description:
@@ -28,14 +28,13 @@ const Homepage = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-r from-blue-200 to-yellow-200 flex items-center justify-center text-white">
+      <div className="bg-gradient-to-r from-blue-300 to-yellow-300 flex items-center justify-center text-white">
         <div className="relative w-full px-6 py-6 text-center">
           <div className="relative space-y-6">
-            <div className="text-[30px] font-extrabold uppercase xl:text-[80px] text-red-600 mt-[6rem]">
-              <span className="block">The Future of</span>
-              <span className="text-red-600 font-extrabold">Entertainment is Here</span> 
+            <div className="text-[30px] font-extrabold uppercase xl:text-[80px] bg-gradient-to-r from-black via-red-600 to-black bg-clip-text mt-[6rem]">
+              <span className="block text-transparent font-extrabold">The Future of</span>
+              <span className="text-transparent font-extrabold">Entertainment is Here</span>
             </div>
-
             <div className="flex justify-center space-x-5 flex-wrap">
               <div className="px-8 flex items-center justify-between gap-8">
                 <ul className="list-none p-0 m-0 flex flex-wrap gap-5 w-full justify-center">
@@ -66,12 +65,19 @@ const Homepage = () => {
             <p className="text-4xl font-semibold text-red-600">
               With <span className="text-yellow-500">4K Ultra HD</span> support
             </p>
-            <div className="relative mx-auto max-w-screen-2xl sm:max-w-[30rem] lg:max-w-[38rem] xl:max-w-5xl">
+            {/* <div className="relative mx-auto max-w-screen-2xl sm:max-w-[30rem] lg:max-w-[38rem] xl:max-w-5xl">
               <div className="absolute w-full h-full bg-red-500 skew-x-12 sm:scale-x-150 scale-x-100 rounded-t-[50%] rounded-b-[50%]"></div>
               <p className="relative text-xl sm:text-6xl font-extrabold uppercase text-white py-3 sm:py-6 px-4 sm:px-8">
                 1000+ IPTV Channels
               </p>
+            </div> */}
+            <div className="relative mx-auto max-w-screen-2xl sm:max-w-[30rem] lg:max-w-[38rem] xl:max-w-5xl">
+              <div className="absolute w-full h-full bg-gradient-to-r from-black to-red-500 skew-x-12 sm:scale-x-150 scale-x-100 rounded-t-[50%] rounded-b-[50%]"></div>
+              <p className="relative text-xl sm:text-6xl font-extrabold uppercase text-white py-3 sm:py-6 px-4 sm:px-8">
+                1000+ IPTV Channels
+              </p>
             </div>
+
           </div>
           <div className="items-center w-full max-w-screen-2xl mx-auto justify-center grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-11 xl:gap-[1rem] sm:gap-[2rem] mt-4">
             <div className="flex justify-center items-center">

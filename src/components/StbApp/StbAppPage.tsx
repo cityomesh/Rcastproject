@@ -6,7 +6,7 @@ const StbAppPage = () => {
   const images = [{ src: "/vcdhg.png", alt: "Smart TV" }];
 
   return (
-    <div className="bg-white">
+    <div className="mb-8">
       <div className="bg-white mt-6 p-6">
         <h2 className="text-center font-semibold text-2xl md:text-3xl font-poppins text-blue-800 mt-10 mt-[5rem]">
           Set-Top-Box

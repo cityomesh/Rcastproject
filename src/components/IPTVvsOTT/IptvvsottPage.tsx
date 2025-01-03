@@ -37,8 +37,8 @@ const IptvvsottPage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-200 to-yellow-200 w-full p-4">
-      <section className="container mx-auto px-4 mt-[6rem] mb-8 flex justify-center">
+    <div className="bg-gradient-to-r from-blue-300 to-yellow-300 w-full p-12">
+      <section className="container mx-auto mt-[6rem] mb-8 flex justify-center">
         <div className="w-full max-w-4xl">
           <div className="text-3xl font-bold text-center mb-4">IPTV vs OTT</div>
           <div className="flex flex-col gap-4">
@@ -53,7 +53,6 @@ const IptvvsottPage = () => {
                   {faq.question}
                   <span>{activeAccordion === faq.id ? "-" : "+"}</span>
                 </motion.button>
-
                 <motion.div
                   className="mt-2 text-gray-700"
                   initial={{ opacity: 0, maxHeight: 0 }}

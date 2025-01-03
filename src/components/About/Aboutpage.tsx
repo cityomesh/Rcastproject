@@ -6,52 +6,45 @@ const Aboutpage = () => {
   const fourCardsData = [
     {
       content: "City Online Media (P) Limited is promoted by technocrats having more than two decades of experience in Internet and Television Industry.",
-      bgColor: "bg-orange-500",
+      bgColor: "bg-orange-300",
     },
     {
       content: "Rcast the IPTV SAAS (Software As A Solution) is deployed for ULKA TV services  for more than 4 years. The Concept of IPTV is tested by Public and Private ISPs by deploying ULKA TV in their broadband Networks.",
-      bgColor: "bg-blue-500",
+      bgColor: "bg-blue-300",
     },
     {
       content: " Evaluation of responses from ISPs and users helped us to proceed to the next stage of development in the right direction with clarity on features and functionality of the product. We focused on the quality and distribution efficiency of IPTV service which can be deployed in all types of broadband networks.",
-      bgColor: "bg-pink-500",
+      bgColor: "bg-pink-300",
     },
     {
-      content: "ULKA TV using Rcast successfully passed all the Audits conducted by the Broadcasters and its own self Audits for the last four years.",
-      bgColor: "bg-yellow-400",
+      content1: "ULKA TV using Rcast successfully passed all the Audits conducted by the Broadcasters and its own self Audits for the last four years.",
+      content2: "Techsai Digital Solutions LLP is our Distributor for sales.",
+      bgColor: "bg-orange-400",
     },
   ];
 
   return (
-    <div className="bg-white">
-      <div className="w-full">
-      <div className="max-w-8xl mx-auto p-6 mt-[6rem]">
-        <h1 className="text-center text-2xl text-blue-900 mt-2 font-bold mb-8">
-          ABOUT US  
+    <div className="w-full p-4 sm:p-12">
+      <div className="max-w-8xl mx-auto mt-[7rem] mb-[8rem]">
+        <h1 className="text-center text-2xl sm:text-3xl text-blue-900 mt-2 font-bold mb-8">
+          ABOUT US
         </h1>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 font-bold text-[20px] mb-8">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 font-bold text-base sm:text-[22px] mb-8">
           {fourCardsData.map((card, index) => (
             <div
               key={index}
-              className={`p-4 rounded-lg text-bg-slate-950 flex flex-col justify-center items-center h-[400px] ${card.bgColor} relative group transition-colors duration-300`}
+              className={`p-6 sm:p-8 rounded-lg text-bg-slate-950 flex flex-col justify-center items-center h-auto sm:h-[400px] ${card.bgColor} relative group transition-all duration-300 transform hover:scale-105 hover:shadow-lg`}
             >
-              <div
-                className="absolute inset-0 rounded-full bg-purple-600 opacity-0 scale-50 group-hover:opacity-50 group-hover:scale-100 transition-all duration-300 pointer-events-none"
-                style={{
-                  width: "20rem",
-                  height: "20rem",
-                  margin: "auto",
-                  top: 0,
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                }}
-              ></div>
-              <p className="relative text-center">{card.content}</p>
+              <p className="relative text-center px-4 sm:px-8">
+                {card.content && <span>{card.content}</span>}
+                {card.content1 && <span>{card.content1}</span>}
+                {card.content2 && <span className="block mt-2 text-2xl font-bold">{card.content2}</span>}
+              </p>
+              {/* Add inner highlight effect on hover */}
+              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-25 transition-opacity duration-300 rounded-lg"></div>
             </div>
           ))}
         </div>
-      </div>
       </div>
     </div>
   );

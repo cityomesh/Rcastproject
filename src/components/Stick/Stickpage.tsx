@@ -16,7 +16,7 @@ const SmartTvPage: React.FC = () => {
         our apps bring seamless entertainment to your fingertips.
       </p>
 
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-2 px-4">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-2 px-4 mb-6">
         <div className="w-full max-w-[330px]">
           <Image
             src="/rcastss.png"

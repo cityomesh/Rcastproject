@@ -59,13 +59,13 @@ const SmartConnectPage = () => {
   ];
   
   return (
-    <div className="bg-white w-full p-10">
+    <div className="w-full p-10">
       <section className="container mx-auto px-4 flex flex-col justify-center mt-[8rem] mb-8">
         <div className="flex flex-wrap gap-6 justify-center">
           {services.map((service, index) => (
             <div
               key={index}
-              className={`bg-slate-800	 rounded-lg shadow-lg p-6 flex flex-col justify-between items-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-400 w-64 h-50`}
+              className={`rounded-lg shadow-lg p-6 flex flex-col justify-between items-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-400 w-64 h-50`}
             >
               <h3 className="text-xl font-semibold text-white text-center">{service.title}</h3>
               <img
@@ -112,9 +112,9 @@ const SmartConnectPage = () => {
           </div>
           <div className="overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
             <img
-              src="./iptvv.jpg"
+              src="./ipsc.png"
               alt="Project 2"
-              className="w-full h-[12rem] object-cover"
+              className="w-full h-[14rem] object-cover"
             />
           </div>
           <div className="overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300">
@@ -128,7 +128,7 @@ const SmartConnectPage = () => {
             <img
               src="./iuysa.png"
               alt="Project 4"
-              className="w-full h-[15rem] object-cover"
+              className="w-full h-[13rem] object-cover"
             />
           </div>
         </div>
