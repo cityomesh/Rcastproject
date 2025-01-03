@@ -61,8 +61,8 @@ const IptvCableTvPage = () => {
 
 
   return (
-    <div className="mt-[8rem]">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="mt-[3rem] bg-white py-12">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         <div>
           <Carousel
             showThumbs={true}

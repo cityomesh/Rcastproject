@@ -24,7 +24,7 @@ const Aboutpage = () => {
   ];
 
   return (
-    <div className="w-full p-4 sm:p-12">
+    <div className="bg-white w-full p-4 sm:p-12">
       <div className="max-w-8xl mx-auto mt-[7rem] mb-[8rem]">
         <h1 className="text-center text-2xl sm:text-3xl text-blue-900 mt-2 font-bold mb-8">
           ABOUT US
@@ -32,17 +32,17 @@ const Aboutpage = () => {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 font-bold text-base sm:text-[22px] mb-8">
           {fourCardsData.map((card, index) => (
             <div
-              key={index}
-              className={`p-6 sm:p-8 rounded-lg text-bg-slate-950 flex flex-col justify-center items-center h-auto sm:h-[400px] ${card.bgColor} relative group transition-all duration-300 transform hover:scale-105 hover:shadow-lg`}
-            >
-              <p className="relative text-center px-4 sm:px-8">
-                {card.content && <span>{card.content}</span>}
-                {card.content1 && <span>{card.content1}</span>}
-                {card.content2 && <span className="block mt-2 text-2xl font-bold">{card.content2}</span>}
-              </p>
-              {/* Add inner highlight effect on hover */}
-              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-25 transition-opacity duration-300 rounded-lg"></div>
-            </div>
+            key={index}
+            className={`p-6 sm:p-8 rounded-lg text-slate-950 flex flex-col justify-center items-center h-auto sm:h-[400px] ${card.bgColor} relative group transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-white`}
+          >
+            <p className="relative text-center px-4 sm:px-8">
+              {card.content && <span>{card.content}</span>}
+              {card.content1 && <span>{card.content1}</span>}
+              {card.content2 && <span className="block mt-2 text-2xl font-bold">{card.content2}</span>}
+            </p>
+            <div className="absolute inset-0 bg-transparent opacity-0 group-hover:opacity-0 transition-opacity duration-300 rounded-lg"></div>
+          </div>
+          
           ))}
         </div>
       </div>

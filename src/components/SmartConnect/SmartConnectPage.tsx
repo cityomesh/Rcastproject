@@ -59,7 +59,7 @@ const SmartConnectPage = () => {
   ];
   
   return (
-    <div className="w-full p-10">
+    <div className="bg-white w-full p-10">
       <section className="container mx-auto px-4 flex flex-col justify-center mt-[8rem] mb-8">
         <div className="flex flex-wrap gap-6 justify-center">
           {services.map((service, index) => (
