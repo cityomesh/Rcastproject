@@ -5,7 +5,7 @@ import Image from "next/image";
 const SmartTvPage: React.FC = () => {
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-300 to-yellow-300 flex flex-col items-center justify-start px-4">
+    <div className="min-h-screen bg-gradient-to-r from-blue-100 to-yellow-100 flex flex-col items-center justify-start px-4">
       <h1 className="text-4xl font-extrabold text-blue-800 mb-4 sm:mb-8 text-center leading-tight mt-4 mt-[10rem]">
         Upgrade Your TV Experience with Rcast!
       </h1>

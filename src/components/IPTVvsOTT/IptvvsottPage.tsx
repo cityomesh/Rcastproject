@@ -37,7 +37,7 @@ const IptvvsottPage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-300 to-yellow-300 w-full p-12">
+    <div className="bg-gradient-to-r from-blue-100 to-yellow-100 w-full p-12">
       <section className="container mx-auto mt-[6rem] mb-8 flex justify-center">
         <div className="w-full max-w-4xl">
           <div className="text-3xl font-bold text-center mb-4">IPTV vs OTT</div>

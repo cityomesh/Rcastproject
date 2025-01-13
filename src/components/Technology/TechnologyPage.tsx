@@ -55,7 +55,7 @@ const TechnologyPage = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-blue-300 to-yellow-300 w-full p-10">
+    <div className="bg-gradient-to-r from-blue-100 to-yellow-100 w-full p-10">
       <div className="mt-[5rem] flex justify-center">
         <h2
           className="font-bold text-lg sm:text-lg md:text-xl text-white bg-[#0a0f2c] py-2 px-4 sm:py-2 sm:px-6 rounded-lg shadow-lg border-2 border-transparent group duration-300"

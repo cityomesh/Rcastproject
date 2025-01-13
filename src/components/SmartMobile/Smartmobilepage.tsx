@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Smartmobilepage = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-300 to-yellow-300 min-h-screen w-full flex flex-col">
+    <div className="bg-gradient-to-r from-blue-100 to-yellow-100 min-h-screen w-full flex flex-col">
       <div className="mt-6 p-6">
         <h2 className="text-center font-semibold text-4xl font-poppins text-blue-800 mt-[5rem]">
           Smart Apps for Mobile

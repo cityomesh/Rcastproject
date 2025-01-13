@@ -75,7 +75,7 @@ const SmartTvPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-300 to-yellow-300 flex flex-col items-center justify-center px-4 mt-[4rem]">
+    <div className="min-h-screen bg-gradient-to-r from-blue-100 to-yellow-100 flex flex-col items-center justify-center px-4 mt-[4rem]">
       <div className="flex flex-col items-center justify-center px-4">
         <h1 className="text-4xl font-bold text-center text-blue-900 mt-[5rem] mb-8">
           Future of Television in India

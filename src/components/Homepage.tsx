@@ -10,7 +10,7 @@ const Homepage = () => {
   const servicesproject = [
     {
       description:
-        "• We can distribute 10000+ Channels and can include local channels on select CDN servers as per requirements of distributors.",
+        "• We can distribute 1000+ Channels and can include local channels on select CDN servers as per requirements of distributors.",
     },
     {
       description:
@@ -28,7 +28,7 @@ const Homepage = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-r from-blue-300 to-yellow-300 flex items-center justify-center text-white">
+      <div className="bg-gradient-to-r from-blue-100 to-yellow-100 flex items-center justify-center text-white">
         <div className="relative w-full px-6 py-6 text-center">
           <div className="relative space-y-6">
             <div className="text-[30px] font-extrabold uppercase xl:text-[80px] bg-gradient-to-r from-black via-red-600 to-black bg-clip-text mt-[6rem]">
