@@ -127,7 +127,7 @@ const Smartmobilepage = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <h1 className="text-3xl bg-pink-300 font-bold text-center text-blue-900 mb-8 mt-8 bg-pink-00 text-black p-5 rounded-lg shadow-md w-full max-w-[90%] sm:max-w-[85rem] hover:bg-blue-400 hover:text-black">
+        <h1 className="text-2xl bg-[#0a0f2c] font-bold text-center text-white mb-8 mt-8 bg-pink-00 text-black p-5 rounded-lg shadow-md w-full max-w-[90%] sm:max-w-[85rem] hover:bg-blue-400 hover:text-black">
           Rcast Mini Mobile App is available in Android Smart Phones and I-Phone is under Process.
         </h1>
       </div>
