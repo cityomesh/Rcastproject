@@ -197,7 +197,7 @@ const Contactpage = () => {
         </div>
 
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.492635979274!2d78.4464182!3d17.4364301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90c518f1af29%3A0xc0f5f478e7d34d42!2sCity%20Online%20Services%20Limited!5e0!3m2!1sen!2sin!4v1698358298192!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.504926263192!2d78.4454461!3d17.4364976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91005ff34afb%3A0x53f45a43a87b33e9!2sCity%20Online%20Media%20Private%20Limited!5e0!3m2!1sen!2sin!4v1698358298192!5m2!1sen!2sin"
           className="w-full h-96 mt-8 rounded"
           loading="lazy"
           frameBorder="0"
